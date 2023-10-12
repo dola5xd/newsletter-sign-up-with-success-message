@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="font-Roboto w-[100vw] laptop:w-auto overflow-x-hidden relative laptop:bg-Dark_Slate_Grey-0"
+  >
+    <section
+      class="w-full main laptop:absolute laptop:bg-white laptop:w-[70%] desktop:w-[50%] laptop:flex laptop:flex-row-reverse laptop:justify-between laptop:p-5 laptop:top-1/2 laptop:left-1/2 laptop:-translate-x-1/2 laptop:translate-y-1/4 laptop:rounded-2xl transition-all duration-500"
+    >
+      <img
+        src="./images/illustration-sign-up-mobile.svg"
+        alt="illustration"
+        class="w-full laptop:hidden"
+      />
+      <img
+        src="./images/illustration-sign-up-desktop.svg"
+        alt="illustration"
+        class="hidden tablet:w-auto laptop:block"
+      />
+      <div class="mt-7 mx-7">
+        <h2 class="text-Dark_Slate_Grey-0 font-bold text-[2em]">
+          Stay updated!
+        </h2>
+        <p class="my-7 font-normal text-[16px] text-Dark_Slate_Grey-0">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="mb-7">
+          <li
+            class="flex items-center my-2 py-2 px-3 font-normal text-[16px] text-Dark_Slate_Grey-0"
+          >
+            <img src="./images/icon-list.svg" alt="list" class="mr-4" />
+            Product discovery and building what matters
+          </li>
+          <li
+            class="flex items-center my-2 py-2 px-3 font-normal text-[16px] text-Dark_Slate_Grey-0"
+          >
+            <img src="./images/icon-list.svg" alt="list" class="mr-4" />
+            Measuring to ensure updates are a success
+          </li>
+          <li
+            class="flex items-center my-2 py-2 px-3 font-normal text-[16px] text-Dark_Slate_Grey-0"
+          >
+            <img src="./images/icon-list.svg" alt="list" class="mr-4" />
+            And much more!
+          </li>
+        </ul>
+        <div class="form flex flex-col">
+          <div class="text laptop:relative desktop:relative">
+            <label for="email" class="text-Dark_Slate_Grey-0 font-bold"
+              >Email address</label
+            >
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="Email"
+            placeholder="email@company.com"
+            class="ring-1 ring-Grey-0 py-4 px-4 my-4 rounded-lg transition-colors duration-700 text-Dark_Slate_Grey-0 focus:ring-Dark_Slate_Grey-0 focus:ring-2 focus:outline-none"
+          />
+          <button
+            id="sub"
+            type="submit"
+            class="bg-Dark_Slate_Grey-0 text-white py-4 w-full rounded-lg text-center font-bold mt-[7px] text-[16px] transition-all duration-500 hover:bg-Tomato-0 hover:shadow-lg hover:shadow-Tomato-0"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="success laptop:hidden absolute top-0 -left-full bg-white w-full h-[105%] px-7 flex flex-col items-start pt-44 transition-transform -translate-x-full duration-500"
+    >
+      <img src="./images/icon-success.svg" alt="success" class="mb-10" />
+      <h1 class="font-bold text-Dark_Slate_Grey-0 text-[2.5em] w-3/4 mb-12">
+        Thanks for subscribing!
+      </h1>
+      <p class="text-Dark_Slate_Grey-0 text-[16px] w-3/4">
+        A confirmation email has been sent to
+        <span class="font-bold" id="span1"></span>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button
+        class="Dismiss bg-Dark_Slate_Grey-0 text-white py-4 w-3/4 left-1/2 shadow-lg shadow-Dark_Slate_Grey-0 -translate-x-1/2 rounded-lg mt-10 absolute bottom-10 transition-all duration-500 hover:bg-Tomato-0 hover:shadow-lg hover:shadow-Tomato-0"
+      >
+        Dismiss message
+      </button>
+    </section>
+    <section
+      id="success"
+      class="success hidden bg-white absolute top-1/2 w-[35%] flex-col items-start justify-between p-14 -left-full -translate-x-[300%] translate-y-1/2 rounded-3xl laptop:flex transition-transform duration-500"
+    >
+      <img src="./images/icon-success.svg" alt="success" class="mb-5" />
+      <h1
+        class="font-bold text-Dark_Slate_Grey-0 text-[2.5em] mb-5 leading-[47px] desktop:my-10"
+      >
+        Thanks for subscribing!
+      </h1>
+      <p
+        class="text-Dark_Slate_Grey-0 text-[16px] mb-5 desktop:text-[18px] desktop:my-10"
+      >
+        A confirmation email has been sent to
+        <span class="font-bold" id="span2"></span>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button
+        class="Dismiss bg-Dark_Slate_Grey-0 text-white py-4 w-full left-1/2 shadow-lg shadow-Dark_Slate_Grey-0 rounded-lg transition-all duration-500 hover:bg-Tomato-0 hover:shadow-lg hover:shadow-Tomato-0"
+      >
+        Dismiss message
+      </button>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
